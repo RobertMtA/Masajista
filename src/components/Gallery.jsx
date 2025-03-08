@@ -22,11 +22,11 @@ return (
         {[1, 2, 8, 9, 19, 15, 13, 17, 3].map((num) => (
         <div key={num} className="image-container">
             <img
-            src={`/src/img/img${num}.jpg`}
+              src={`/img/img${num}.jpg`} // Ruta corregida
             alt={`Imagen ${num}`}
             className="gallery-image"
             loading="lazy"
-            onClick={() => openLightbox(`/src/img/img${num}.jpg`)}
+              onClick={() => openLightbox(`/img/img${num}.jpg`)} // Ruta corregida
             />
         </div>
         ))}
@@ -39,7 +39,7 @@ return (
         {[1, 2, 3, 4, 5, 6].map((num) => (
         <div key={num} className="video-container">
             <video
-            src={`/src/img/video${num}.mp4`}
+              src={`/img/video${num}.mp4`} // Ruta corregida
             controls
             className="gallery-video"
             loading="lazy"

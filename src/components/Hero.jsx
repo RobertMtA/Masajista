@@ -1,12 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import { FaArrowRight, FaHome } from 'react-icons/fa'; // Importa solo los íconos que necesitas
+import { FaArrowRight, FaHome } from 'react-icons/fa';
 import './Hero.css';
-
-// Importar imágenes si están en src/img/
-import img14 from '../img/img14.jpg';
-import img4 from '../img/img4.jpg';
-import img20 from '../img/img20.jpg';
 
 const Hero = () => {
 return (
@@ -24,7 +19,7 @@ return (
         <Carousel.Item>
         <img
             className="d-block w-100"
-            src={img14} // Usar la imagen importada
+            src="/img/img14.jpg" // Ruta absoluta
             alt="Masaje Relajante"
         />
         <Carousel.Caption>
@@ -36,7 +31,7 @@ return (
         <Carousel.Item>
         <img
             className="d-block w-100"
-            src={img4} // Usar la imagen importada
+            src="/img/img4.jpg" // Ruta absoluta
             alt="Masaje Deportivo"
         />
         <Carousel.Caption>
@@ -48,7 +43,7 @@ return (
         <Carousel.Item>
         <img
             className="d-block w-100"
-            src={img20} // Usar la imagen importada
+            src="/img/img20.jpg" // Ruta absoluta
             alt="Masaje Especial"
         />
         <Carousel.Caption>

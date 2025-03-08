@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
-import logo from "../img/logo.jpg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +30,8 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="logo">
-          <img src={logo} alt="Logo de Masajista App" className="logo-img" />
+          {/* Ruta absoluta desde la carpeta public */}
+          <img src="/img/logo.jpg" alt="Logo de Masajista App" className="logo-img" />
         </div>
 
         {/* Botón del menú móvil */}
