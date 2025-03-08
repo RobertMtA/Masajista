@@ -24,6 +24,14 @@ const Services = () => {
     }
   ];
 
+  // Número de WhatsApp (en formato internacional, sin el signo +)
+  const whatsappNumber = "+541141766377"; // Reemplaza con tu número de WhatsApp
+
+  // Mensaje predefinido para WhatsApp
+  const whatsappMessage = (serviceTitle) => {
+    return encodeURIComponent(`Hola, estoy interesado/a en reservar el servicio de ${serviceTitle}. ¿Podrías darme más información?`);
+  };
+
   return (
     <section id="services" className="services">
       <h2>Los Servicios que brindo</h2>
@@ -39,9 +47,14 @@ const Services = () => {
               <div className="service-price">
                 {service.price}
               </div>
-              <button className="book-button">
+              <a
+                href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage(service.title)}`}
+                className="book-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Reservar Ahora
-              </button>
+              </a>
             </div>
             {index < services.length - 1 && (
               <div className="service-separator" />

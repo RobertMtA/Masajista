@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import './Navbar.css';
+import './Navbar.css'; // Importa el CSS
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +18,7 @@ const Navbar = () => {
 
   // Alternar el menú móvil
   const toggleMenu = () => {
+    console.log("Estado del menú:", !isMenuOpen); // Depuración
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -30,7 +31,6 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="logo">
-          {/* Ruta absoluta desde la carpeta public */}
           <img src="/img/logo.jpg" alt="Logo de Masajista App" className="logo-img" />
         </div>
 

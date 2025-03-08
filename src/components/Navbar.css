@@ -82,6 +82,7 @@
     color: #f50057;
 }
 
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .mobile-menu-button {
         display: block;
@@ -101,6 +102,7 @@
         opacity: 0;
         transition: all 0.3s ease;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 999; /* Asegurar que esté por encima de otros elementos */
     }
 
     .nav-links.active {
@@ -113,6 +115,7 @@
     }
 }
 
+/* Estilos para pantallas muy pequeñas (móviles pequeños) */
 @media (max-width: 480px) {
     .navbar-container {
         padding: 0 1rem;
@@ -120,5 +123,14 @@
 
     .logo-img {
         height: 40px;
+    }
+
+    .nav-links {
+        top: 60px; /* Ajustar la posición del menú móvil */
+        padding: 1rem; /* Reducir el padding del menú móvil */
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Reducir el tamaño de la fuente en pantallas pequeñas */
     }
 }
