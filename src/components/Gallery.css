@@ -1,0 +1,1594 @@
+/* Estilos generales para la galería */
+.gallery {
+    padding: 20px;
+    text-align: center; /* Centra el contenido */
+    font-family: "Lilita One", sans-serif;
+}
+
+  /* Separador visual */
+.gallery-separator {
+    border: 1px solid #ccc;
+    margin: 40px auto; /* Centra el separador */
+    width: 80%; /* Ancho del separador */
+}
+
+  /* Contenedor de la imagen */
+.image-container {
+    overflow: hidden; /* Para que la imagen no se salga del contenedor al agrandarse */
+    border-radius: 8px;
+    margin: 10px; /* Espacio entre imágenes */
+    display: inline-block; /* Para que las imágenes estén en línea */
+    width: calc(33.333% - 20px); /* Tres imágenes por fila */
+}
+
+  /* Estilos para las imágenes en la galería */
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    aspect-ratio: 3/4; /* Ajusta la relación de aspecto para formato vertical */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+.gallery {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Lilita One", serif;
+    color: #333;
+}
+.image-grid, .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.image-container, .video-container {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.image-container:hover, .video-container:hover {
+    transform: translateY(-5px);
+}
+.gallery-image, .gallery-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.gallery-separator {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #333, transparent);
+    margin: 3rem 0;
+}
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.lightbox-image {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+.close-button:hover {
+    color: #f50057;
+}
+@media (max-width: 768px) {
+    .image-grid, .video-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+.gallery {
+    padding: 1rem;
+}.image-container, .video-container {
+    position: relative;
+}.like-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+}.like-button svg {
+    color: #666;
+    transition: all 0.3s ease;
+}.like-button.liked svg {
+    color: #f50057;
+    transform: scale(1.1);
+}.like-count {
+    font-size: 0.9rem;
+    color: #333;
+}.like-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}.like-button.liked:hover svg {
+    transform: scale(1.2);
+}
+/* Loading animation */
+.gallery-image, .gallery-video {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9; /* Relación de aspecto para videos */
+}.gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio
