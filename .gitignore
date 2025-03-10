@@ -1,0 +1,85 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+/cypress/videos/
+/cypress/screenshots/
+
+# Production
+/build
+/dist
+/dist-ssr
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+.project
+.classpath
+.settings/
+
+# Cache and Temporary files
+.cache/
+.temp/
+.tmp/
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# Package manager files
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Debug
+.debug/
+debug.log
+debug/
+
+# Build artifacts
+stats.json
+stats.html
+bundle-analysis.html
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Optional
+*.bak
+*.orig
+.history/
